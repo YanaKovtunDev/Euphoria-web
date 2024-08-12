@@ -1,0 +1,5 @@
+@mixin font-header($size) {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: $size;
+}
