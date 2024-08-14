@@ -1,26 +1,10 @@
-:root {
-  // Colors
-  --white: #FFFFFF;
-
-  --primary: #3C4242;
-  --secondary: #8A33FD;
-  --secondary-dark: #6620C1;
-
-  --text-light: #807D7E;
-  --bg-grey: #BEBCBD;
-  --light-grey: #EDEEF2;
-  --bg-light: #F6F6F6;
-  --error: #EE1D52;
-
-  // Radius
-  --radius-1: 0.5rem;
-}
-
 // Colors
 $white: var(--white);
 $primary: var(--primary);
+$primary-dark: var(--primary-dark);
+$primary-hover: var(--primary-hover);
 $secondary: var(--secondary);
-$secondary: var(--secondary-dark);
+
 $text-light: var(--text-light);
 $bg-grey: var(--bg-grey);
 $light-grey: var(--light-grey);

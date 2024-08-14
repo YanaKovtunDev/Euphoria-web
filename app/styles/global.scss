@@ -2,10 +2,31 @@
 @import "mixins";
 @import "typography";
 
+:root {
+  // Colors
+  --white: #FFFFFF;
+
+  --primary: #8A33FD;
+  --primary-dark: #6620C1;
+  --primary-hover: #6620C10D;
+  --secondary: #3C4242;
+
+  --text-light: #807D7E;
+  --bg-grey: #BEBCBD;
+  --light-grey: #EDEEF2;
+  --bg-light: #F6F6F6;
+  --error: #EE1D52;
+
+  // Radius
+  --radius-1: 0.5rem;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 html {

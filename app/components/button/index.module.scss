@@ -1,0 +1,50 @@
+@import '@/app/styles/variables';
+
+.button {
+  padding: 1rem 1.25rem;
+  border-radius: $radius-1;
+  cursor: pointer;
+  font-size: 1.125rem;
+  box-shadow: unset;
+  transition: all 0.15s ease-in-out;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+
+  &.primary {
+    background-color: $primary;
+    color: $white;
+
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
+      background-color: $primary-dark;
+    }
+  }
+
+  &.secondary {
+    background-color: $bg-light;
+    color: $primary;
+    border: 1px solid $secondary;
+
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
+      background-color: $primary-hover;
+    }
+
+    &:focus:not(:disabled) {
+      border-color: $primary;
+    }
+  }
+
+  &.icon {
+    padding: 0.5rem;
+  }
+
+  &:disabled {
+    cursor: default;
+    background-color: $light-grey;
+    color: $text-light;
+  }
+}
