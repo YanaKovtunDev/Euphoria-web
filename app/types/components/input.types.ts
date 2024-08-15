@@ -1,5 +1,5 @@
 import { FormikErrors, FormikProps, FormikTouched, FormikValues } from "formik";
-import { ChangeEvent, CSSProperties, ReactNode } from "react";
+import { ChangeEvent, CSSProperties } from "react";
 
 type TType = "text" | "password" | "email" | "number";
 type TIconPosition = "left" | "right";
@@ -19,8 +19,15 @@ export interface IInputProps {
   icon?: string;
   iconPosition?: TIconPosition;
   formData?: FormikProps<FormikValues>;
-  error?: string | string[] | FormikErrors<any> | FormikErrors<any>[];
-  touched?: boolean | FormikTouched<any> | FormikTouched<any>[];
+  error?:
+    | string
+    | string[]
+    | FormikErrors<FormikValues>
+    | FormikErrors<FormikValues>[];
+  touched?:
+    | boolean
+    | FormikTouched<FormikValues>
+    | FormikTouched<FormikValues>[];
   style?: CSSProperties;
   customClassName?: string;
   showLabel?: boolean;

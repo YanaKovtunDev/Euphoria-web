@@ -1,13 +1,10 @@
 import { ReactSVG } from "react-svg";
 import { FC } from "react";
 
+import { TIconProps } from "@/app/types/components/icon.types";
+
 import styles from "./index.module.scss";
 
-type TIconProps = {
-  icon: string;
-  onClick?: () => void;
-  size?: "small" | "medium" | "large";
-};
 export const IconComponent: FC<TIconProps> = ({
   icon,
   onClick,
