@@ -1,0 +1,12 @@
+@import 'variables';
+
+@mixin font-header($size) {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: $size;
+}
+
+@mixin font-input {
+  font-size: 0.875rem;
+  color: $text-light;
+}

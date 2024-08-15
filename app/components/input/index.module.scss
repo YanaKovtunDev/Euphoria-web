@@ -1,0 +1,60 @@
+@import '@/app/styles/variables';
+@import '@/app/styles/mixins';
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .label {
+    margin-bottom: 0.625rem;
+    font-size: 1rem;
+    color: $secondary;
+  }
+
+  .error {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    color: $error;
+  }
+
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-height: 9rem;
+    gap: 10px;
+    border-radius: $radius-1;
+    padding: 1rem 1.25rem;
+    background-color: $bg-light;
+
+    &:focus-within {
+      outline: none;
+      border-color: $primary;
+      background-color: $primary-hover;
+    }
+  }
+
+  .regular_border {
+    border: 1px solid $secondary;
+  }
+
+  .input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    @include font-input;
+
+    &:focus {
+      outline: none;
+      color: $primary;
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}

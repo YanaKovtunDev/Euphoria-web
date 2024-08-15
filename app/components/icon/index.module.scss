@@ -1,0 +1,16 @@
+.icon {
+  span:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  svg {
+    height: 1.25rem;
+    width: auto;
+  }
+
+  &.small svg {
+    height: 1rem;
+  }
+}
